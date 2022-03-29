@@ -108,7 +108,7 @@ const Home = (props: HomeProps) => {
             setDiscountPrice(cndy.state.whitelistMintSettings.discountPrice);
           } else {
             setDiscountPrice(undefined);
-            // when presale=false and discountPrice=null, mint is restricted
+            // when presale=false and discountPrice=null, mint is restricted --
             // to whitelist users only
             if (!cndy.state.whitelistMintSettings.presale) {
               cndy.state.isWhitelistOnly = true;
